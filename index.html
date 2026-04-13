@@ -219,8 +219,28 @@
     .oss-section {
       margin-top: 5rem;
       width: 100%;
-      max-width: 700px;
+      max-width: 900px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .oss-section > .oss-card {
+      width: 100%;
+      max-width: 820px;
+    }
+
+    @media (min-width: 768px) {
+      .oss-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 900px;
+      }
+      .oss-title {
+        grid-column: 1 / -1;
+      }
     }
 
     .oss-title {
@@ -388,6 +408,23 @@
           <span class="oss-tag">CI/CD</span>
         </div>
         <a href="https://github.com/wssaidong/oss-pages" class="oss-link" target="_blank" rel="noopener">
+          访问项目 →
+        </a>
+      </div>
+
+      <div class="oss-card">
+        <div class="oss-card-header">
+          <span class="oss-name">wildcard-higress</span>
+          <span class="oss-badge">GitHub</span>
+        </div>
+        <p class="oss-desc">Kubernetes Controller 自动化管理 Higress 泛域名路由和实例配置 — 监听 Service 与 ConfigMap 事件，自动创建/清理 Ingress 资源，支持 Finalizer 机制。</p>
+        <div class="oss-tags">
+          <span class="oss-tag">Kubernetes</span>
+          <span class="oss-tag">Higress</span>
+          <span class="oss-tag">Ingress</span>
+          <span class="oss-tag">Go</span>
+        </div>
+        <a href="https://github.com/wssaidong/wildcard-higress" class="oss-link" target="_blank" rel="noopener">
           访问项目 →
         </a>
       </div>
